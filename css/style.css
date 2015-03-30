@@ -1,28 +1,65 @@
-.container {
-
+html {
+    -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 }
 
-.ss-q-title {
-	display: none;
+body {
+  font-family: 'Roboto';
 }
 
-.required-message {
-	display:none;
+/* DIALOG BOXES*/
+
+#dialogoverlay{
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+#dialogbox{
+  display: none;
+  position: fixed;
+  background: none;
+  border-radius:7px;
+  width:350px;
+  z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #666; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:center; }
+
+.dialog {
+  border: 1px solid gray;
+  padding: 15px 60px;
+  transition: all 0.2s ease;
 }
 
-.ss-password-warning {
-	display: none;
+.dialog:hover,
+.dialog:active {
+  background: ;
 }
 
-/* #entry_685769320  {
- 	border:none;
-	border-bottom: 2px solid green;
-	transition: all 0.5s ease;
+
+
+.logo {
+  width:600px;
+  margin:auto;
+  text-align: center;
 }
 
-#entry_685769320:focus {
-	border-bottom: 2px solid red;
-	outline: none;
+.logo>img {
+  width:600px;
+}
+
+.message {
+  font-size: 15px;
+  color:#1366a8;
+  font-weight: 300;
+}
 
 }*/
 
@@ -30,14 +67,14 @@
 * { box-sizing:border-box; }
 
 /* basic stylings ------------------------------------------ */
-body         { background:url(http://scotch.io/wp-content/uploads/2014/07/61.jpg); }
+
 .container    {
   font-family:'Roboto';
-  width:600px;
-  margin:30px auto 0;
+  width:300px;
+  margin:80px auto 0;
   display:block;
   background:#FFF;
-  padding:10px 50px 50px;
+  /*padding:10px 50px 50px;*/
 }
 h2     {
   text-align:center;
@@ -48,8 +85,6 @@ h2 small {
   color:#888;
   display:block;
 }
-.footer   { text-align:center; }
-.footer a  { color:#53B2C8; }
 
 
 
@@ -86,7 +121,7 @@ label          {
 input:focus ~ label, input:valid ~ label    {
   top:-20px;
   font-size:14px;
-  color:#5264AE;
+  color:#1366a8;
 }
 
 /* BOTTOM BARS ================================= */
@@ -97,7 +132,7 @@ input:focus ~ label, input:valid ~ label    {
   width:0;
   bottom:1px;
   position:absolute;
-  background:#5264AE;
+  background:#1366a8;
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
@@ -144,4 +179,18 @@ input:focus ~ .highlight {
 @keyframes inputHighlighter {
   from { background:#5264AE; }
   to  { width:0; background:transparent; }
+}
+
+.jfk-button {
+text-transform: uppercase;
+background: #5fb42d;
+transition: all .3s ease;
+color:white;
+}
+
+.jfk-button:hover {
+  background: #83c031;
+}
+.jfk-button:active {
+  background:#3c962b;
 }

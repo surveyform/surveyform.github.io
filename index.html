@@ -3,104 +3,116 @@
   <meta charset="UTF-8">
   <title>DMK Baby The Future Is Now survey</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script>
+  function CustomAlert(){
+    this.render = function(dialog){
+        var winW = window.innerWidth;
+        var winH = window.innerHeight;
+        var dialogoverlay = document.getElementById('dialogoverlay');
+        var dialogbox = document.getElementById('dialogbox');
+        dialogoverlay.style.display = "block";
+        dialogoverlay.style.height = winH+"px";
+        dialogbox.style.left = (winW/2) - (350 * .5)+"px";
+        dialogbox.style.top = "100px";
+        dialogbox.style.display = "block";
+        document.getElementById('dialogboxhead').innerHTML = "You left some blank fields";
+        document.getElementById('dialogboxbody').innerHTML = dialog;
+        document.getElementById('dialogboxfoot').innerHTML = '<button class="dialog" onclick="Alert.ok()">OK</button>';
+    }
+	this.ok = function(){
+		document.getElementById('dialogbox').style.display = "none";
+		document.getElementById('dialogoverlay').style.display = "none";
+	}
+}
+var Alert = new CustomAlert();
+  </script>
+
+
 </head>
 <body>
+
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+
 <section>
+<div class="logo">
+	<img src="http://i.imgur.com/QReRcq6.png" alt="" class="">
+	<div class="message">
+		<h1>Please fill out this short survey form, thank you!</h1>
+	</div>
+</div>
+
+
 <div class="container">
+
 	<!-- <form action="https://docs.google.com/forms/d/1JKJDem_-kOPd-JiGKJa0FEtJM4-CRc56u40CLHx_wXA/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0"> -->
+
 
 	<script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
-{window.location='http://yahoo.com';}"></iframe>
-<form action="https://docs.google.com/forms/d/1JKJDem_-kOPd-JiGKJa0FEtJM4-CRc56u40CLHx_wXA/formResponse" method="post"
-target="hidden_iframe" onsubmit="submitted=true;">
-<!-- <div class="ss-form-question errorbox-good" role="listitem">
-<div dir="ltr" class="ss-item ss-item-required ss-text"> -->
-
-
-<!-- <div class="ss-form-entry ">
-<label class="ss-q-item-label" for="entry_1460336335">
-	<div class="ss-q-title">First name
-	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"> First name</label>
-	<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-	<div class="ss-q-help ss-secondary-text" dir="ltr"></div>First namaste</label>
-
-	<input type="text" name="entry.1460336335" value="" class="ss-q-short" id="entry_1460336335" dir="auto" aria-label="First name  " aria-required="true" required="" title="">
-	<span class="highlight"></span>
-      <span class="bar"></span>
-	<div class="error-message" id="146704451_errorMessage">
-	</div>
-	<div class="required-message">This is a required question
-	</div>
-</div> -->
-
-
+{window.location='thankyou.html';}"></iframe>
+<form  action="https://docs.google.com/forms/d/1JKJDem_-kOPd-JiGKJa0FEtJM4-CRc56u40CLHx_wXA/formResponse" method="post"
+target="hidden_iframe" onsubmit="submitted=true; return validateForm()" name="DMKBABY">
 
 
     <div class="group">
       <input type="text" name="entry.1460336335" value="" class="ss-q-short" id="entry_1460336335" dir="auto" aria-label="First name  " aria-required="true" required="" title="" aria-required="true">
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label> FIRST NAME</label>
+      <label> First name</label>
     </div>
 
     <div class="group">
       <input type="text" name="entry.1446146070" value="" class="ss-q-short" id="entry_1446146070" dir="auto" aria-label="Last name  " aria-required="true" required="" title="" aria-required="true">
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label> LAST NAME</label>
+      <label> Last name</label>
     </div>
 
      <div class="group">
       <input type="text"  name="entry.685769320" value="" class="ss-q-short" id="entry_685769320" dir="auto" aria-label="Flight number  " aria-required="true" required="" title="" aria-required="true" >
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label> FLIGHT NUMBER</label>
+      <label> Flight Nr.</label>
     </div>
 
-<!--
-
-</div>
-</div>
- <div class="ss-form-question errorbox-good" role="listitem">
-<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-
-
-<label class="ss-q-item-label" for="entry_1446146070"><div class="ss-q-title">Last name
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-</label>
-
-<input type="text" name="entry.1446146070" value="" class="ss-q-short" id="entry_1446146070" dir="auto" aria-label="Last name  " aria-required="true" required="" title="" >
-<div class="error-message" id="426707539_errorMessage"></div>
-<div class="required-message">This is a required question</div>
-</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-<label class="ss-q-item-label" for="entry_685769320"><div class="ss-q-title">Flight number
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<input type="text" name="entry.685769320" value="" class="ss-q-short" id="entry_685769320" dir="auto" aria-label="Flight number  " aria-required="true" required="" title="">
-<div class="error-message" id="1558414699_errorMessage"></div>
-<div class="required-message">This is a required question</div>
-</div></div></div>
-<input type="hidden" name="draftResponse" value="[,,&quot;5729121195376910826&quot;]
-">
-<input type="hidden" name="pageHistory" value="0">
-
-
-<input type="hidden" name="fbzx" value="5729121195376910826">
-
-<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
 <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
-</tr></tbody></table></div></ol> -->
 
-<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
 </form>
+
+<script>
+function validateForm() {
+    var x = document.forms["DMKBABY"]["entry.1460336335"].value;
+    if (x == null || x == "") {
+        Alert.render("First Name must be filled out");
+        return false;
+    }
+
+    var x = document.forms["DMKBABY"]["entry.1446146070"].value;
+    if (x == null || x == "") {
+        Alert.render("Last name must be filled out");
+        return false;
+    }
+
+    var x = document.forms["DMKBABY"]["entry.685769320"].value;
+    if (x == null || x == "") {
+        Alert.render("Flight number name must be filled out");
+        return false;
+    }
+
+}
+</script>
+
 </div>
 </section>
+
+
 </body>
 </html>
