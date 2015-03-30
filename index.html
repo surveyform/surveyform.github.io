@@ -63,21 +63,21 @@ target="hidden_iframe" onsubmit="submitted=true; return validateForm()" name="DM
 
 
     <div class="group">
-      <input type="text" name="entry.1460336335" value="" class="ss-q-short" id="entry_1460336335" dir="auto" aria-label="First name  " aria-required="true" required="" title="" aria-required="true">
+      <input type="text" name="entry.1460336335" value="" class="ss-q-short" id="entry_1460336335" dir="auto" aria-label="First name  " aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> First name</label>
     </div>
 
     <div class="group">
-      <input type="text" name="entry.1446146070" value="" class="ss-q-short" id="entry_1446146070" dir="auto" aria-label="Last name  " aria-required="true" required="" title="" aria-required="true">
+      <input type="text" name="entry.1446146070" value="" class="ss-q-short" id="entry_1446146070" dir="auto" aria-label="Last name  " aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> Last name</label>
     </div>
 
      <div class="group">
-      <input type="text"  name="entry.685769320" value="" class="ss-q-short" id="entry_685769320" dir="auto" aria-label="Flight number  " aria-required="true" required="" title="" aria-required="true" >
+      <input type="text"  name="entry.685769320" value="text" class="ss-q-short" id="entry_685769320" dir="auto" aria-label="Flight number  " aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> Flight Nr.</label>
@@ -91,7 +91,7 @@ target="hidden_iframe" onsubmit="submitted=true; return validateForm()" name="DM
 function validateForm() {
     var x = document.forms["DMKBABY"]["entry.1460336335"].value;
     if (x == null || x == "") {
-        Alert.render("First Name must be filled out");
+        Alert.render("First name must be filled out");
         return false;
     }
 
