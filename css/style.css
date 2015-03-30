@@ -91,6 +91,9 @@ h2 small {
   display:block;
 }
 
+form {
+  margin:auto;
+}
 
 
 /* form starting stylings ------------------------------- */
