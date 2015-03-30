@@ -7,7 +7,14 @@
 <body>
 <section>
 <div class="container">
-	<form action="http://google.com" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+	<!-- <form action="https://docs.google.com/forms/d/1JKJDem_-kOPd-JiGKJa0FEtJM4-CRc56u40CLHx_wXA/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0"> -->
+
+	<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='http://yahoo.com';}"></iframe>
+<form action="https://docs.google.com/forms/d/1JKJDem_-kOPd-JiGKJa0FEtJM4-CRc56u40CLHx_wXA/formResponse" method="post"
+target="hidden_iframe" onsubmit="submitted=true;">
 <!-- <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-text"> -->
 
