@@ -34,7 +34,7 @@ body {
 }
 #dialogbox > div{ background:#FFF; margin:8px; }
 #dialogbox > div > #dialogboxhead{ background: #ecf0f1; font-size:24px; padding:30px 0 0 0; color:#1366a8; text-align: center; }
-#dialogbox > div > #dialogboxbody{ background:#ecf0f1; font-size: 20px; font-weight:bold; padding:5px 0 0 0; color:#1366a8; text-align:center;}
+#dialogbox > div > #dialogboxbody{ background:#ecf0f1; font-size: 20px; font-weight:bold; padding:5px 0 15px 0; color:#1366a8; text-align:center;}
 #dialogbox > div > #dialogboxfoot{ background: #ecf0f1; padding:20px; text-align:center; }
 
 
