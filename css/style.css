@@ -121,7 +121,8 @@ input         {
   display:block;
   width:300px;
   border:none;
-  border-bottom:1px solid #757575;
+  color: #0C4572;
+  border-bottom:1px solid #339AED;
 }
 input:focus     { outline:none; }
 
