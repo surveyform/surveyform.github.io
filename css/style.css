@@ -130,7 +130,7 @@ input         {
   width:300px;
   border:none;
   color: #0C4572;
-  border-bottom:1px solid #339AED;
+  border-bottom:1px solid #666;
 }
 input:focus     { outline:none; }
 
