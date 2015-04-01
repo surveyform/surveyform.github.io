@@ -278,6 +278,10 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
     .thankyou {
       margin-bottom: 30px;
     }
+    .container {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
 
 }
 
@@ -289,6 +293,7 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
     .container {
       padding:0;
       margin-top: 30px;
+      margin-bottom: 30px;
     }
     .message {
       font-size: 12px;
