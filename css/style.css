@@ -282,5 +282,8 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
     .jfk-button {
       margin-bottom: 0;
     }
+    .thankyou {
+      padding-top: 150px;
+    }
 
 }
