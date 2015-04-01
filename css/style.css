@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: 'Roboto';
+  margin:0;
 
   background: url("http://i.imgur.com/LRbSf3H.jpg") no-repeat fixed;
     -webkit-background-size: cover;
@@ -91,7 +92,19 @@ section {
 }
 
 .thankyou {
-  padding-top: 60px;
+
+  padding: 20px;
+      background:white;
+      width:240px;
+      border: 1px solid
+      /*margin-bottom: 50px;*/
+      -webkit-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      -moz-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      text-align: center;
+      margin: auto;
+      top:50px;
+    }
 }
 
 
@@ -266,7 +279,6 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
 @media (max-width: 480px) {
   .logo>img {
     width:320px;
-    padding-bottom: 50px;
   }
     .container {
       padding:0;
