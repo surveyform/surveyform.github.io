@@ -272,6 +272,12 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .logo>img {
+    width:480px;
+  }
+    .thankyou {
+      margin-bottom: 30px;
+    }
 
 }
 
@@ -282,6 +288,7 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
   }
     .container {
       padding:0;
+      margin-top: 30px;
     }
     .message {
       font-size: 12px;
@@ -306,7 +313,7 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
       -moz-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
       box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
       text-align: center;
-      margin: auto;
+      margin:  auto;
     }
 
 }
