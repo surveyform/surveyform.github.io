@@ -326,5 +326,8 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
       text-align: center;
       margin:  auto;
     }
+    .bar {
+      width: 270px;
+    }
 
 }
