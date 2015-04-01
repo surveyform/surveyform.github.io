@@ -272,6 +272,9 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  section {
+    padding-bottom: 30px;
+  }
     .logo>img {
     width:480px;
   }
@@ -287,6 +290,9 @@ box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+  section {
+    padding-bottom: 30px;
+  }
   .logo>img {
     width:320px;
   }
