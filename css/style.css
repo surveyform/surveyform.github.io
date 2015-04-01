@@ -11,7 +11,7 @@ html {
 body {
   font-family: 'Roboto';
 
-  background: url("http://i.imgur.com/LRbSf3H.jpg") no-repeat center center fixed;
+  background: url("http://i.imgur.com/LRbSf3H.jpg") no-repeat fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,6 +19,11 @@ body {
   width:100%;
   height: 100%;
 }
+
+section {
+  padding-top: 50px;
+}
+
 
 /* DIALOG BOXES*/
 
@@ -68,7 +73,6 @@ body {
 
 
 .logo {
-  width:600px;
   margin:auto;
   text-align: center;
 }
@@ -78,9 +82,12 @@ body {
 }
 
 .message {
-  font-size: 15px;
+  font-size: 14px;
   color:#1366a8;
-  font-weight: 300;
+  font-weight: 100;
+  margin-top: -15px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .thankyou {
@@ -131,6 +138,8 @@ input         {
   border:none;
   color: #0C4572;
   border-bottom:1px solid #666;
+      -webkit-appearance: none;
+    border-radius: 0;
 }
 input:focus     { outline:none; }
 
@@ -237,4 +246,41 @@ margin-bottom: -20px;
   -webkit-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
 -moz-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
 box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+}
+
+
+
+/*****************************************************************/
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .logo>img {
+    width:320px;}
+    .container {
+      padding:0;
+    }
+    .message {
+      font-size: 12px;
+      padding-top: 5px;
+    }
+    form{
+      padding:15px;
+    }
+    input {
+      width:270px;
+    }
+    .jfk-button {
+      margin-bottom: 0;
+    }
+
 }
