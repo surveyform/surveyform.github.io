@@ -82,42 +82,42 @@ target="hidden_iframe" onsubmit="submitted=true; return validateForm()" name="DM
     </div>
 
      <div class="group">
-      <input type="text"  name="entry.685769320" value="" class="ss-q-short" id="entry_685769320" dir="auto" aria-label="IN aFlight Number  " aria-required="true" required="" title="" >
+      <input type="text"  name="entry.685769320" value="" class="ss-q-short" id="entry_685769320" dir="auto" aria-label="IN Flight Number" aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> IN Flight Number</label>
     </div>
 
      <div class="group">
-      <input type="text"  name="entry_607327883" value="" class="ss-q-short" id="entry_607327883" dir="auto" aria-label="Departure Time  " aria-required="true" required="" title="" >
+      <input type="text"  name="entry.607327883" value="" class="ss-q-short" id="entry_607327883" dir="auto" aria-label="Departure Time " aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> Departure Time (HH:MM)</label>
     </div>
 
      <div class="group">
-      <input type="text"  name="entry_165716126" value="" class="ss-q-short" id="entry_165716126" dir="auto" aria-label="Arrival Time  " aria-required="true" required="" title="" >
+      <input type="text"  name="entry.165716126" value="" class="ss-q-short" id="entry_165716126" dir="auto" aria-label="Arrival Time" aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> Arrival Time (HH:MM)</label>
     </div>
 
      <div class="group">
-      <input type="text"  name="entry_1725807161" value="" class="ss-q-short" id="entry_1725807161" dir="auto" aria-label="OUT Flight  Number  " aria-required="true" required="" title="" >
+      <input type="text"  name="entry.1725807161" value="" class="ss-q-short" id="entry_1725807161" dir="auto" aria-label="OUT Flight  Number" aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> OUT Flight Number</label>
     </div>
 
      <div class="group">
-      <input type="text"  name="entry_972103642" value="" class="ss-q-short" id="entry_972103642" dir="auto" aria-label="Departure Time " aria-required="true" required="" title="" >
+      <input type="text"  name="entry.972103642" value="" class="ss-q-short" id="entry_972103642" dir="auto" aria-label="Departure Time" aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> Departure Time (HH:MM)</label>
     </div>
 
      <div class="group">
-      <input type="text"  name="entry_722128711" value="" class="ss-q-short" id="entry_722128711" dir="auto" aria-label="Arrival Time " aria-required="true" required="" title="" >
+      <input type="text"  name="entry.722128711" value="" class="ss-q-short" id="entry_722128711" dir="auto" aria-label="Arrival Time" aria-required="true" required="" title="" >
       <span class="highlight"></span>
       <span class="bar"></span>
       <label> Arrival Time (HH:MM)</label>
@@ -132,22 +132,51 @@ target="hidden_iframe" onsubmit="submitted=true; return validateForm()" name="DM
 function validateForm() {
     var x = document.forms["DMKBABY"]["entry.1460336335"].value;
     if (x == null || x == "") {
-        Alert.render("First name must be filled out");
+        Alert.render("First Name must be filled out");
         return false;
     }
 
     var x = document.forms["DMKBABY"]["entry.1446146070"].value;
     if (x == null || x == "") {
-        Alert.render("Last name must be filled out");
+        Alert.render("Last Name must be filled out");
         return false;
     }
 
     var x = document.forms["DMKBABY"]["entry.685769320"].value;
     if (x == null || x == "") {
-        Alert.render("Flight number name must be filled out");
+        Alert.render("IN Flight Number must be filled out");
         return false;
     }
 
+    var x = document.forms["DMKBABY"]["entry.607327883"].value;
+    if (x == null || x == "") {
+        Alert.render("IN Flight departure time must be filled out");
+        return false;
+    }
+
+    var x = document.forms["DMKBABY"]["entry.165716126"].value;
+    if (x == null || x == "") {
+        Alert.render("IN Flight arrival time must be filled out");
+        return false;
+    }
+
+    var x = document.forms["DMKBABY"]["entry.1725807161"].value;
+    if (x == null || x == "") {
+        Alert.render("OUT Flight Number  must be filled out");
+        return false;
+    }
+
+    var x = document.forms["DMKBABY"]["entry.972103642"].value;
+    if (x == null || x == "") {
+        Alert.render("OUT Flight departure time  must be filled out");
+        return false;
+    }
+
+    var x = document.forms["DMKBABY"]["entry.722128711"].value;
+    if (x == null || x == "") {
+        Alert.render("OUT Flight arrival time  must be filled out");
+        return false;
+    }
 }
 </script>
 
